@@ -5,7 +5,7 @@ import MenuItem from "./MenuItem";
 function Menu() {
   const { menu } = useGlobalContext();
   return (
-    <div>
+    <div className="flex flex-wrap justify-center">
       {menu.map((item) => {
         return <MenuItem key={item.id} item={item} />;
       })}
